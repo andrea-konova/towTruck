@@ -1,3 +1,6 @@
+.section-hero 
+  height: 100vh
+  background: $darc url('../img/header/header_bg.jpg') no-repeat center / cover
 .row__phone 
   justify-content: flex-end
 .phone
@@ -8,6 +11,7 @@
   text-transform: uppercase
   &__text
     color: $light
+    margin: 1rem 0
   &__help
     margin-left: 0.5rem
     color: $mainColor
@@ -27,7 +31,7 @@
     align-items: center
 .logo
   &__image
-    padding: 0 0.5rem 0 2rem
+    padding: 0 0.5rem 0 1.5rem
   &__link
     font-family: 'Anton', sans-serif
     font-size: 1.45rem
@@ -35,7 +39,6 @@
     color: $black
 .nav
   display: flex
-
   &__item
     margin-right: 3.75rem
     font-weight: bold
@@ -56,4 +59,22 @@
       color: $mainColor
       &::after
         width: 100%
+.hero
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  margin-top: 6.5rem
+  color: $light
+  &__title
+    margin: 0
+    font-size: 4.35rem
+    font-weight: bold
+    text-transform: uppercase
+  &__subtitle
+    margin: 0
+    font-size: 3.3rem
+    text-transform: capitalize
+  &__button
+    margin-top: 3.75rem
 

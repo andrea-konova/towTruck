@@ -313,10 +313,9 @@ template {
   display: none; }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1110px;
-  margin: auto;
-  background-color: #383232; }
+  margin: auto; }
 
 .row {
   display: flex; }
@@ -338,6 +337,23 @@ body {
 a {
   text-decoration: none; }
 
+.button {
+  padding: 1rem 2.5rem;
+  font-size: 0.85rem;
+  border: 0.15rem solid #fc5a0a;
+  color: #ffffff;
+  background-color: #fc5a0a;
+  text-transform: uppercase;
+  transition: background-color 0.3s; }
+  .button:hover {
+    cursor: pointer;
+    background-color: rgba(252, 90, 10, 0.1);
+    border: 0.15rem solid #fc5a0a; }
+
+.section-hero {
+  height: 100vh;
+  background: #4a4f53 url("../img/header/header_bg.jpg") no-repeat center/cover; }
+
 .row__phone {
   justify-content: flex-end; }
 
@@ -348,10 +364,11 @@ a {
   font-weight: bold;
   text-transform: uppercase; }
   .phone__text {
-    color: #ffffff; }
+    color: #ffffff;
+    margin: 1rem 0; }
   .phone__help {
     margin-left: 0.5rem;
-    color: #e52e38; }
+    color: #fc5a0a; }
   .phone__link {
     margin-left: 0.5rem;
     color: #ffffff; }
@@ -369,7 +386,7 @@ a {
   align-items: center; }
 
 .logo__image {
-  padding: 0 0.5rem 0 2rem; }
+  padding: 0 0.5rem 0 1.5rem; }
 
 .logo__link {
   font-family: 'Anton', sans-serif;
@@ -393,9 +410,36 @@ a {
       text-align: center;
       height: 2px;
       width: 0%;
-      background-color: #e52e38;
+      background-color: #fc5a0a;
       transition: 0.3s; }
     .nav__item:hover {
-      color: #e52e38; }
+      color: #fc5a0a; }
       .nav__item:hover::after {
         width: 100%; }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6.5rem;
+  color: #ffffff; }
+  .hero__title {
+    margin: 0;
+    font-size: 4.35rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .hero__subtitle {
+    margin: 0;
+    font-size: 3.3rem;
+    text-transform: capitalize; }
+  .hero__button {
+    margin-top: 3.75rem; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px; } }
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 12px; } }
