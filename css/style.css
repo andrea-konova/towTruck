@@ -360,6 +360,12 @@ a {
   -webkit-clip-path: polygon(0 95%, 0 0%, 100% 0, 100% 95%, 50% 100%);
           clip-path: polygon(0 95%, 0 0%, 100% 0, 100% 95%, 50% 100%); }
 
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
 .section-hero {
   padding-bottom: 30rem; }
 
@@ -418,7 +424,7 @@ a {
   font-family: 'Anton', sans-serif;
   font-size: 1.45rem;
   text-transform: uppercase;
-  color: #000000; }
+  color: #111111; }
 
 .nav {
   display: flex; }
@@ -426,7 +432,7 @@ a {
     margin-right: 3.75rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #000000; }
+    color: #111111; }
     .nav__item:last-child {
       margin-right: 2.5rem; }
     .nav__item::after {
@@ -536,6 +542,25 @@ a {
       text-transform: lowercase; }
     .about__card-info {
       text-align: left; }
+
+.clip-wrap__feedback {
+  position: relative;
+  -webkit-clip-path: polygon(100% 100%, 50% 92%, 0 100%, 0 8%, 50% 0, 100% 8%);
+          clip-path: polygon(100% 100%, 50% 92%, 0 100%, 0 8%, 50% 0, 100% 8%); }
+  .clip-wrap__feedback::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.8); }
+
+.feedback__container {
+  position: absolute; }
+
+.feedback__heading {
+  color: #ffffff; }
 
 @media screen and (max-width: 1200px) {
   html {
