@@ -350,9 +350,35 @@ a {
     background-color: rgba(252, 90, 10, 0.1);
     border: 0.15rem solid #fc5a0a; }
 
+.clip-wrap {
+  display: flex;
+  vertical-align: top;
+  padding: 0;
+  margin: 0; }
+
+.clip-css {
+  -webkit-clip-path: polygon(0 95%, 0 0%, 100% 0, 100% 95%, 50% 100%);
+          clip-path: polygon(0 95%, 0 0%, 100% 0, 100% 95%, 50% 100%); }
+
 .section-hero {
-  height: 100vh;
-  background: #4a4f53 url("../img/header/header_bg.jpg") no-repeat center/cover; }
+  padding-bottom: 30rem; }
+
+.clip-wrap__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50rem; }
+  .clip-wrap__header-image {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
+
+.main__scrin {
+  position: relative; }
 
 .row__phone {
   justify-content: flex-end; }
@@ -385,7 +411,7 @@ a {
   display: flex;
   align-items: center; }
 
-.logo__image {
+.logo__img {
   padding: 0 0.5rem 0 1.5rem; }
 
 .logo__link {
@@ -436,10 +462,51 @@ a {
   .hero__button {
     margin-top: 3.75rem; }
 
+.services {
+  margin-top: -17rem; }
+  .services__row {
+    display: flex;
+    align-items: start;
+    justify-content: space-between; }
+  .services__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 23%;
+    max-width: 16.25rem; }
+    .services__card-title {
+      margin: 1.5rem 0;
+      font-size: 1.125rem;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .services__card-info {
+      margin: 0 0 2rem 0;
+      font-size: 1rem;
+      text-align: center;
+      color: #4a4f53; }
+
+.clip-wrap__services {
+  width: 100%;
+  height: 14.25rem; }
+  .clip-wrap__services-image {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px; } }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 992px) {
   html {
-    font-size: 12px; } }
+    font-size: 12px; }
+  __img {
+    padding-left: 1rem; }
+  .nav__item {
+    margin-right: 3.2rem; }
+    .nav__item:last-child {
+      margin-right: 2rem; } }
