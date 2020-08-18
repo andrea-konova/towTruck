@@ -12,5 +12,33 @@
       margin-right: 3.2rem
       &:last-child
         margin-right: 2rem
-// @media screen and ( max-width: 760px )
-// @media screen and ( max-width: 576px )
+@media screen and ( max-width: 760px )
+  .header__menu
+    flex-direction: column
+    height: 7rem
+  .menu
+    &__logo
+      padding: 0.5rem 0 1rem 0
+    &__nav
+      padding-bottom: 1rem
+  .nav
+    &__item
+      &:last-child
+        margin-right: 0
+  .services 
+    &__row
+      justify-content: space-around
+    &__card
+      width: 45%
+      max-width: 19rem
+  .clip
+    &-wrap__services
+      height: 16rem
+@media screen and ( max-width: 576px )
+  .services 
+    &__card
+      width: 85%
+      max-width: 25rem
+  .clip
+    &-wrap__services
+      height: 21rem
