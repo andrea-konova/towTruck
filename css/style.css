@@ -347,6 +347,8 @@ a {
   transition: background-color 0.3s; }
   .button:hover {
     cursor: pointer;
+    font-weight: bold;
+    color: #fc5a0a;
     background-color: rgba(252, 90, 10, 0.1);
     border: 0.15rem solid #fc5a0a; }
 
@@ -467,6 +469,8 @@ a {
     text-transform: capitalize; }
   .hero__button {
     margin-top: 3.75rem; }
+    .hero__button:hover {
+      color: #ffffff; }
 
 .services {
   margin-top: -17rem; }
