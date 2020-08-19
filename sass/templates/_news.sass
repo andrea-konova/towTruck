@@ -1,0 +1,66 @@
+.news
+  margin-bottom: 3rem
+  &__row
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+  &__heading
+    margin-bottom: 5rem
+  &__card
+    padding-bottom: 2rem
+    width: 30%
+    max-width: 22rem
+    display: flex
+    align-items: start
+    justify-content: space-between
+    flex-wrap: wrap
+    &-wrap
+      width: 100%
+      max-width: 34rem
+      padding: 0 0 75% 0
+      position: relative
+      &--image
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: center
+        position: absolute
+        top: 0
+        left: 0
+    &-item
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      margin-top: 1rem
+      width: 100%
+      max-width: 22rem
+    &-date
+      margin: 0
+      padding: 1rem 0.5rem
+      width: 40%
+      max-width: 5rem
+      text-align: center
+      background-color: $mainColor
+      clip-path: polygon(90% 0, 0 0, 0 100%, 90% 100%, 100% 50%)
+      color: $light
+      font-size: 0.85rem
+      font-weight: bold
+      text-transform: uppercase
+    &-title
+      margin: 0
+      width: 70%
+      padding-top: 0.5rem
+      font-size: 1.125rem
+    &-info
+      color: $darc
+    &-button
+      padding: 0
+      border: none
+      color: $mainColor
+      background-color: transparent
+      font-weight: bold
+      &:hover
+        cursor: pointer
+        color: $mainColor
+        background-color: transparent
+        border: none

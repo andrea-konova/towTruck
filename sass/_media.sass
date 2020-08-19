@@ -12,6 +12,12 @@
       margin-right: 3.2rem
       &:last-child
         margin-right: 2rem
+  .news
+    &__row
+      justify-content: space-around
+    &__card
+      width: 45%
+      max-width: 25rem
 @media screen and ( max-width: 760px )
   .header__menu
     flex-direction: column
@@ -52,6 +58,31 @@
       max-width: 45rem
       &-info
         text-align: center
+  .feedback
+    padding-bottom: 6rem
+  .quote
+    &__row
+      justify-content: space-around
+      flex-wrap: wrap
+    &__wrap
+      width: 75%
+      max-width: 45rem
+      padding: 0 0 45% 0
+    &__form
+      &-wrap
+        margin-top: 2rem
+        padding-left: 0
+        width: 75%
+        max-width: 45rem
+  .input
+    width: 48%
+    max-width: 22rem
+  .textarea
+    width: 100%
+    max-width: 45rem
+  .form
+    &-button
+      margin: 0 auto 
 @media screen and ( max-width: 576px )
   .services 
     &__card
@@ -60,3 +91,15 @@
   .clip
     &-wrap__services
       height: 21rem
+  .feedback
+    padding-bottom: 10rem
+    &__card
+      &-human
+        display: none
+  .news
+    &__card
+      width: 85%
+      max-width: 28rem
+  .input
+    width: 100%
+    max-width: 45rem
