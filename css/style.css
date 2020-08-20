@@ -724,6 +724,85 @@ a {
   width: 100%;
   max-width: 32.5rem; }
 
+.footer {
+  background: #111111; }
+  .footer__row-first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    background-color: #fc5a0a; }
+    .footer__row-first--clip {
+      -webkit-clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 25%, 50% 0);
+              clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 25%, 50% 0); }
+  .footer__row-main {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0 0 3rem 0; }
+  .footer__header {
+    margin-bottom: 1.5rem; }
+  .footer__heading {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff; }
+    .footer__heading-line {
+      width: 35px;
+      height: 3px;
+      background-color: #fc5a0a; }
+  .footer__contacts {
+    width: 25%;
+    max-width: 16rem; }
+  .footer__navigation {
+    width: 15%;
+    max-width: 7rem; }
+  .footer__map {
+    width: 36%;
+    max-width: 22rem; }
+  .footer__place {
+    display: flex;
+    justify-content: start;
+    margin-top: 2rem; }
+  .footer__nav {
+    display: flex;
+    flex-direction: column; }
+    .footer__nav-item {
+      margin: 0 0 0.5rem 0;
+      color: #ffffff;
+      text-transform: none;
+      font-weight: normal; }
+      .footer__nav-item:last-child {
+        margin-right: 0; }
+      .footer__nav-item::after {
+        margin: 0; }
+      .footer__nav-item:hover::after {
+        width: 70%; }
+  .footer__phone {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none; }
+  .footer__logo {
+    margin-right: 1rem; }
+  .footer__main {
+    margin-right: 0.5rem; }
+  .footer__developer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .footer__developer-link {
+      color: #ffffff;
+      font-size: 1.45rem; }
+    .footer__developer-lower {
+      font-family: 'PT Sans', sans-serif;
+      text-transform: none; }
+
+.link-dev:hover {
+  color: #111111; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px; } }
