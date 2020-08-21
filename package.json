@@ -17,8 +17,13 @@
   },
   "homepage": "https://github.com/andrea-konova/towTruck#readme",
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.7.0",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "webpack": "^4.44.1"
   },
   "dependencies": {
     "browser-sync": "^2.26.12",
