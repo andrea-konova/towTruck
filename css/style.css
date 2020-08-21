@@ -809,6 +809,43 @@ a {
 .link-dev:hover {
   color: #111111; }
 
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(17, 17, 17, 0.5); }
+  .popup__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent url("../img/close.png") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .popup-content {
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    width: 40%;
+    max-width: 25rem;
+    transform: translateX(-50%);
+    background-color: #ffffff; }
+  .popup__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 1rem 2rem 1rem;
+    width: 100%; }
+  .popup__input {
+    width: 100%; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px; } }
@@ -889,7 +926,11 @@ a {
     justify-content: space-around;
     flex-wrap: wrap; }
   .footer__map {
-    display: none; } }
+    display: none; }
+  .popup-content {
+    width: 50%; }
+  .popup__input {
+    width: 80%; } }
 
 @media screen and (max-width: 576px) {
   .services__card {
@@ -910,4 +951,8 @@ a {
   .footer__contacts {
     width: 60%; }
   .footer__navigation {
-    display: none; } }
+    display: none; }
+  .popup-content {
+    width: 75%; }
+  .popup__input {
+    width: 80%; } }
