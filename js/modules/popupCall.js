@@ -1,9 +1,16 @@
-const popupCall = () => {
-  const popup = document.querySelector('.popup'),
-    popupClose = document.querySelector('.popup__close');
+export const popupCall = () => {
+	const body = document.querySelector('body'),
+		popup = document.querySelector('.popup');
 
-  console.log(popup);
-  console.log(popupClose);
-}
+	body.addEventListener('click', event => {
+		const target = event.target;
 
-export default popupCall;
+		if (target.matches('.popup-button')) {
+			popup.style.display = 'block';
+		}
+
+		if (target.matches('.popup-close')) {
+			popup.style.display = 'none';
+		}
+	});
+};

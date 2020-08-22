@@ -819,7 +819,7 @@ a {
   height: 100%;
   z-index: 3;
   background-color: rgba(17, 17, 17, 0.8); }
-  .popup__close {
+  .popup-close {
     position: absolute;
     top: 0;
     right: 0;

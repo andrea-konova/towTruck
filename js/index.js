@@ -1,6 +1,4 @@
-'use strict'
-
-import popupCall from './modules/popupCall';
+import { popupCall } from './modules/popupCall.js';
 
 
 popupCall();

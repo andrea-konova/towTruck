@@ -7,7 +7,6 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/index.js" defer></script>
 </head>
 <body>
   <header class="section-hero" id="header">
@@ -41,7 +40,7 @@
       <div class="hero">
         <h1 class="hero__title">Ведущий поставщик</h1>
         <p class="hero__subtitle">услуг буксировки</p>
-        <button class="button hero__button">Узнать больше</button>
+        <button class="button hero__button popup-button">Узнать больше</button>
       </div>
       <!-- /.hero -->
     </div>
@@ -61,7 +60,7 @@
             <!-- /.services__card-image -->
             <h3 class="services__card-title">Поломки автомобиля</h3>
             <p class="services__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил знаках единственное вопроса ручеек за.</p>
-            <button class="button services__card-button">Узнать больше</button>
+            <button class="button services__card-button popup-button">Узнать больше</button>
           </div>
           <!-- /.services__card -->
           <div class="services__card">
@@ -73,7 +72,7 @@
             <!-- /.services__card-image -->
             <h3 class="services__card-title">Дорожная авария</h3>
             <p class="services__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил знаках единственное вопроса ручеек за.</p>
-            <button class="button services__card-button">Узнать больше</button>
+            <button class="button services__card-button popup-button">Узнать больше</button>
           </div>
           <!-- /.services__card -->
           <div class="services__card">
@@ -85,7 +84,7 @@
             <!-- /.services__card-image -->
             <h3 class="services__card-title">Cпущенная шина</h3>
             <p class="services__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил знаках единственное вопроса ручеек за.</p>
-            <button class="button services__card-button">Узнать больше</button>
+            <button class="button services__card-button popup-button">Узнать больше</button>
           </div>
           <!-- /.services__card -->
           <div class="services__card">
@@ -97,7 +96,7 @@
             <!-- /.services__card-image -->
             <h3 class="services__card-title">Буксировка мотоцикла</h3>
             <p class="services__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил знаках единственное вопроса ручеек за.</p>
-            <button class="button services__card-button">Узнать больше</button>
+            <button class="button services__card-button popup-button">Узнать больше</button>
           </div>
           <!-- /.services__card -->
         </div>
@@ -115,7 +114,7 @@
             <h2 class="services__card-title about__card-title">Безопасная доставка</h2>
             <p class="about__card-subtitle">Вашему автомобилю гарантированна!</p>
             <p class="services__card-info about__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварный все заманивший приставка буквоград вдали которое домах путь, но пустился которой то моей его, повстречался за! Предупредила лучше если от всех выйти рот, толку всемогущая lorem. Но, обеспечивает себя родного безорфографичный несколько большого если что?</p>
-            <button class="button about__card-button">Узнать больше</button>
+            <button class="button about__card-button popup-button">Узнать больше</button>
           </div>
         </div>
       </div>
@@ -307,7 +306,7 @@
   <div class="popup-call popup">
     <div class="popup-dialog">
       <div class="popup-content">
-        <button class="popup__close"></button>
+        <button class="popup-close"></button>
         <form action="#" method="post" class="form popup__form">
           <input type="text" autocomplete="off" name="userName" class="input form__input popup__input" id="popup-user-name" placeholder="Имя">
           <input type="email" autocomplete="off" name="userEmail" class="input form__input popup__input" id="popup-user-email" placeholder="Email">
@@ -320,5 +319,7 @@
     <!-- /.popup-dialog -->
   </div>
   <!-- /.popup-call popup -->
+
+  <script src="js/index.js" type="module" defer></script>
 </body>
 </html>
