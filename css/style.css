@@ -370,14 +370,12 @@ a {
 
 .section-hero {
   padding-bottom: 30rem; }
-
-.swiper-container {
-  width: 100%;
-  position: absolute;
-  z-index: -1; }
-
-.swiper-wrapper {
-  width: 100%; }
+  .section-hero__swiper-container {
+    width: 100%;
+    position: absolute;
+    z-index: -1; }
+  .section-hero__swiper-wrapper {
+    width: 100%; }
 
 .swiper-slide.swiper-slide-active {
   width: 100% !important; }
@@ -577,8 +575,6 @@ a {
 .feedback {
   margin-top: -3rem;
   padding-bottom: 10rem; }
-  .feedback__container {
-    position: relative; }
   .feedback__heading {
     margin: 0 auto 2rem;
     padding-top: 6.5rem;
