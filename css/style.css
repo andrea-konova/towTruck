@@ -371,8 +371,18 @@ a {
 .section-hero {
   padding-bottom: 30rem; }
 
-.clip-wrap__header {
+.swiper-container {
+  width: 100%;
   position: absolute;
+  z-index: -1; }
+
+.swiper-wrapper {
+  width: 100%; }
+
+.swiper-slide.swiper-slide-active {
+  width: 100% !important; }
+
+.clip-wrap__header {
   top: 0;
   left: 0;
   width: 100%;
@@ -386,7 +396,7 @@ a {
        object-position: center; }
 
 .main__scrin {
-  position: relative; }
+  z-index: 2; }
 
 .row__phone {
   justify-content: flex-end; }
@@ -473,7 +483,9 @@ a {
       color: #ffffff; }
 
 .services {
-  margin-top: -17rem; }
+  margin-top: -17rem;
+  position: relative;
+  z-index: 2; }
   .services__row {
     display: flex;
     align-items: start;
