@@ -4,6 +4,7 @@ export const mainSlider = () => {
 		autoplay: {
 			delay: 3000,
 			disableOnInteraction: false,
-		},
+    },
 	});
 };
+ 

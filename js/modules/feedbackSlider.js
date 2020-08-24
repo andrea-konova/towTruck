@@ -1,23 +1,19 @@
 export const feedbackSlider = () => {
 	new Swiper('.swiper-container', {
-		// pagination: {
-		//   el: '.projects-pagination',
-		//   bulletClass: 'projects-bullet',
-		//   bulletActiveClass: 'projects-bullet-active',
-		//   clickable: true
-		// },
 		loop: true,
-		autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
-		},
+		// autoplay: {
+		// 	delay: 3000,
+		// 	disableOnInteraction: false,
+		// },
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.feedback-button-next',
+			prevEl: '.feedback-button-prev',
 		},
 		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
+			el: '.feedback-pagination',
+      bulletClass: 'feedback-bullet',
+      bulletActiveClass: 'feedback-bullet-active',
+      clickable: true
 		},
 	});
 };

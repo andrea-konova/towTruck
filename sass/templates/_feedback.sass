@@ -12,8 +12,6 @@
 .feedback
   margin-top: -3rem
   padding-bottom: 10rem
-  &__container
-    // position: relative
   &__heading
     margin: 0 auto 2rem
     padding-top: 6.5rem
@@ -21,6 +19,7 @@
   &__card
     display: flex
     align-items: flex-start
+    min-height: 12rem
     &-human
       width: 100%
       max-width: 12rem
@@ -37,15 +36,40 @@
         top: 0
         left: 0
     &-text
-      margin-bottom: 2rem
+      margin-bottom: 1rem
       max-width: 40rem
       font-size: 1rem
       color: $light
       font-style: italic
     &-name
-      font-size: 1.25rem
+      font-size: 1rem
       color: $light
       font-weight: bold
       text-transform: uppercase
-      margin-bottom: 2rem
-
+      margin-bottom: 1rem
+  &-nav
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 30px 0
+  &-bullet
+    display: inline-block
+    margin: 0 5px 0 5px
+    width: 10px
+    height: 10px
+    border: none 
+    border-radius: 50%
+    background: $light
+    &-active
+      background: $mainColor
+  &-button
+    &-prev, &-next
+      background-size: 42px
+      width: 56px
+      height: 32px
+      &::after
+        display: none
+    &-prev
+      background: url('../img/feedback/left-arrow.png') no-repeat center
+    &-next
+      background: url('../img/feedback/right-arrow.png') no-repeat center  
