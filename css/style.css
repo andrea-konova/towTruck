@@ -577,7 +577,7 @@ a {
 
 .feedback {
   margin-top: -3rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 3rem; }
   .feedback__heading {
     margin: 0 auto 2rem;
     padding-top: 6.5rem;
@@ -755,11 +755,13 @@ a {
 
 .input {
   width: 48%;
-  max-width: 15.5rem; }
+  max-width: 15.5rem;
+  border: 1px solid #4a4f53; }
 
 .textarea {
   width: 100%;
-  max-width: 32.5rem; }
+  max-width: 32.5rem;
+  border: 1px solid #4a4f53; }
 
 .footer {
   margin-top: -4rem;
@@ -934,11 +936,10 @@ a {
       flex-direction: column;
       margin-top: 2rem;
       width: 85%;
-      max-width: 45rem; }
+      max-width: 45rem;
+      text-align: center; }
       .about__card-info {
         text-align: center; }
-  .feedback {
-    padding-bottom: 6rem; }
   .quote__row {
     justify-content: space-around;
     flex-wrap: wrap; }
@@ -973,7 +974,7 @@ a {
   .burger {
     display: block;
     position: absolute;
-    top: 10%;
+    top: 65px;
     right: 6%;
     width: 30px;
     height: 3px;
@@ -1016,6 +1017,8 @@ a {
     flex-direction: column;
     align-items: center;
     padding-bottom: 1rem; }
+  .logo__img {
+    padding-left: 0; }
   .nav__item {
     flex-direction: column;
     align-items: center;
@@ -1034,7 +1037,7 @@ a {
   .clip-wrap__services {
     height: 21rem; }
   .feedback {
-    padding-bottom: 10rem; }
+    padding-bottom: 4rem; }
     .feedback__card {
       justify-content: center; }
       .feedback__card-human {
