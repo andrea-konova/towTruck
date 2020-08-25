@@ -1,5 +1,6 @@
 .quote
   margin-bottom: 4rem
+  position: relative
   &__row
     display: flex
     align-items: flex-start
@@ -32,13 +33,27 @@
       width: 48%
       max-width: 32.5rem
 .form
+  &-group
+    position: relative
+    padding-bottom: 2rem
+    width: 48%
+    max-width: 15.5rem
+    &__textarea
+      width: 100%
+      max-width: 32.5rem
   &__input
-    margin-bottom: 2rem
+    // position: relative
+    // margin-bottom: 2rem
     padding: 0.7rem
     color: $darc
+  &-validate
+    position: absolute
+    bottom: 13px
+    left: 3px
+    color: red
 .input
-  width: 48%
-  max-width: 15.5rem
+  width: 100%
+  // max-width: 15.5rem
   border: 1px solid $darc
 .textarea
   width: 100%

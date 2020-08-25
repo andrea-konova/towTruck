@@ -473,7 +473,8 @@ a {
     margin: 0;
     font-size: 4.35rem;
     font-weight: bold;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 0.25rem; }
   .hero__subtitle {
     margin: 0;
     font-size: 3.3rem;
@@ -712,7 +713,8 @@ a {
         border: none; }
 
 .quote {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  position: relative; }
   .quote__row {
     display: flex;
     align-items: flex-start;
@@ -748,14 +750,27 @@ a {
       width: 48%;
       max-width: 32.5rem; }
 
+.form-group {
+  position: relative;
+  padding-bottom: 2rem;
+  width: 48%;
+  max-width: 15.5rem; }
+  .form-group__textarea {
+    width: 100%;
+    max-width: 32.5rem; }
+
 .form__input {
-  margin-bottom: 2rem;
   padding: 0.7rem;
   color: #4a4f53; }
 
+.form-validate {
+  position: absolute;
+  bottom: 13px;
+  left: 3px;
+  color: red; }
+
 .input {
-  width: 48%;
-  max-width: 15.5rem;
+  width: 100%;
   border: 1px solid #4a4f53; }
 
 .textarea {
@@ -858,6 +873,8 @@ a {
   height: 100%;
   z-index: 3;
   background-color: rgba(17, 17, 17, 0.8); }
+  .popup-group {
+    width: 100%; }
   .popup-close {
     position: absolute;
     top: 0;

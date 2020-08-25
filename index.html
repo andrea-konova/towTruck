@@ -58,8 +58,8 @@
       <!-- /.header__menu -->
       <div class="burger" id="burger"></div>
       <div class="hero">
-        <h1 class="hero__title">Ведущий поставщик</h1>
-        <p class="hero__subtitle">услуг буксировки</p>
+        <h1 class="hero__title">Эвакуатор</h1>
+        <p class="hero__subtitle">в Краснодарском крае</p>
         <button class="button hero__button popup-button">Узнать больше</button>
       </div>
       <!-- /.hero -->
@@ -285,12 +285,27 @@
           <div class="quote__form-wrap">
             <h3 class="quote__heading">Получить консультацию</h3>
             <form action="#" method="post" class="quote__form">
-              <input type="text" autocomplete="off" name="userName" class="input form__input quote__input" id="quote-user-name" placeholder="Имя">
-              <input type="email" autocomplete="off" name="userEmail" class="input form__input quote__input" id="quote-user-email" placeholder="Email">
-              <input type="tel" autocomplete="off" name="userPhone" class="input form__input questions__input" id="questions-user-phone" placeholder="Телефон">
-              <input type="text" autocomplete="off" name="userSubject" class="input form__input quote__input" id="quote-user-subject" placeholder="Тема">
-              <textarea type="textarea" autocomplete="off" rows="5" name="userMessage" class="textarea form__input quote__textarea" id="quote-user-message" placeholder="Cообщение"></textarea>
-              <a class="button form-button">Отправить</a>
+              <div class="form-group">
+                <input type="text" autocomplete="off" name="userName" class="input form__input quote__input" id="quote-user-name" placeholder="Имя">
+                <span class="form-validate"></span>
+              </div>
+              <div class="form-group">
+                <input type="email" autocomplete="off" name="userEmail" class="input form__input quote__input" id="quote-user-email" placeholder="Email">
+                <span class="form-validate"></span>
+              </div>
+              <div class="form-group">
+                <input type="tel" autocomplete="off" name="userPhone" class="input form__input quote__input" id="questions-user-phone" placeholder="Телефон">
+                <span class="form-validate"></span>
+              </div>
+              <div class="form-group">
+                <input type="text" autocomplete="off" name="userSubject" class="input form__input quote__input" id="quote-user-subject" placeholder="Тема">
+                <span class="form-validate"></span>
+              </div>
+              <div class="form-group form-group__textarea">
+                <textarea type="textarea" autocomplete="off" rows="5" name="userMessage" class="textarea form__input quote__input quote__textarea" id="quote-user-message" placeholder="Cообщение"></textarea>
+                <span class="form-validate"></span>
+              </div>
+              <button class="button form-button">Отправить</button>
             </form>
           </div>
           <!-- /.quote__form-wrap -->
@@ -391,9 +406,18 @@
       <div class="popup-content">
         <button class="popup-close"></button>
         <form action="#" method="post" class="form popup__form">
-          <input type="text" autocomplete="off" name="userName" class="input form__input popup__input" id="popup-user-name" placeholder="Имя">
-          <input type="email" autocomplete="off" name="userEmail" class="input form__input popup__input" id="popup-user-email" placeholder="Email">
-          <input type="tel" autocomplete="off" name="userPhone" class="input form__input popup__input" id="questions-user-phone" placeholder="Телефон">
+          <div class="form-group popup-group">
+            <input type="text" autocomplete="off" name="userName" class="input form__input popup__input" id="popup-user-name" placeholder="Имя">
+            <span class="form-validate"></span>
+          </div>
+          <div class="form-group popup-group">
+            <input type="email" autocomplete="off" name="userEmail" class="input form__input popup__input" id="popup-user-email" placeholder="Email">
+            <span class="form-validate"></span>
+          </div>
+          <div class="form-group popup-group">
+            <input type="tel" autocomplete="off" name="userPhone" class="input form__input popup__input" id="questions-user-phone" placeholder="Телефон">
+            <span class="form-validate"></span>
+          </div>
           <a class="button form-button">Отправить</a>
         </form>
       </div>
