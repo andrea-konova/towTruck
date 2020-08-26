@@ -569,7 +569,7 @@ a {
   -webkit-clip-path: polygon(100% 100%, 50% 92%, 0 100%, 0 8%, 50% 0, 100% 8%);
           clip-path: polygon(100% 100%, 50% 92%, 0 100%, 0 8%, 50% 0, 100% 8%); }
   .clip-wrap__feedback-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
@@ -757,7 +757,7 @@ a {
   max-width: 15.5rem; }
   .form-group__textarea {
     width: 100%;
-    max-width: 32.5rem; }
+    max-width: 45rem; }
 
 .form__input {
   padding: 0.7rem;
@@ -970,7 +970,7 @@ a {
     width: 75%;
     max-width: 45rem; }
   .input {
-    width: 48%;
+    width: 100%;
     max-width: 22rem; }
   .textarea {
     width: 100%;

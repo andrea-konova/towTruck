@@ -1,14 +1,70 @@
-export const formValidate = () => {
+export const sendForm = () => {
 	const quoteForm = document.querySelector('.quote__form'),
 		popupForm = document.querySelector('.popup__form'),
-		regExpName = /^[а-я0-9_-]{2,16}$/,
+		regExpName = /^[а-яА-Я0-9_-]{2,16}$/,
 		regExpEmail = /^[a-z0-9._%+-]+@[a-z0-9-]+.+.[a-z]{2,4}$/,
-		regExpTel = /^(\+)?[78]([-()]*\d{10,12})/;
+    regExpTel = /^(\+)?[78]([-()]*\d{10,12})/,
+    popUpWindows = document.querySelectorAll('.popup');
 
 	let isValidate = false;
 
-	const submit = () => {
-		alert('Данные отправленны');
+	const errorMessage = 'Что-то пошло не так...',
+		loadMessage = 'Загрузка...',
+		successMessage = 'Спасибо! Мы скоро с вами свяжемся!';
+
+	const statusMessage = document.createElement('div');
+	statusMessage.style.cssText = 'font-size: 1rem;';
+	statusMessage.style.color = '#111111';
+
+	const hideStatusMessage = () => {
+		statusMessage.style.display = 'none';
+  };
+  
+  const hidePopup = () => {
+		popUpWindows.forEach(elem => {
+			elem.style.display = 'none';
+		});
+  };
+
+	const postDate = body => fetch('./telegram.php', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'aplication/json'
+		},
+		body: JSON.stringify(body),
+		credentials: 'include'
+	});
+
+	const postForm = target => {
+		const form = target;
+		form.appendChild(statusMessage);
+		statusMessage.style.display = 'block';
+		statusMessage.textContent = loadMessage;
+		const formData = new FormData(form);
+		const body = {};
+		formData.forEach((val, key) => {
+			body[key] = val;
+		});
+		postDate(body)
+			.then(request => {
+				if (request.status !== 200) {
+					throw new Error('status network not 200');
+				}
+				statusMessage.textContent = successMessage;
+        setTimeout(hideStatusMessage, 3000);
+        setTimeout(hidePopup, 4000);
+			})
+			.catch(error => {
+				statusMessage.textContent = errorMessage;
+        setTimeout(hideStatusMessage, 3000);
+        setTimeout(hidePopup, 4000);
+				console.error(error);
+			});
+
+		const inputs = form.querySelectorAll('input');
+		for (let index = 0; index < inputs.length; index++) {
+			inputs[index].value = '';
+		}
 	};
 
 	const validateElem = elem => {
@@ -32,7 +88,7 @@ export const formValidate = () => {
 		}
 		if (elem.name === 'userPhone') {
 			if (!regExpTel.test(elem.value) && elem.value !== '') {
-				elem.nextElementSibling.textContent = 'Введите корректный Email';
+				elem.nextElementSibling.textContent = 'Введите корректный телефон';
 				isValidate = false;
 			} else {
 				elem.nextElementSibling.textContent = '';
@@ -83,8 +139,8 @@ export const formValidate = () => {
 		}
 
 		if (isValidate) {
-			submit();
-			target.reset();
+      postForm(target);
+			// target.reset();
 		}
 	});
 
