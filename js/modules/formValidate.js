@@ -1,5 +1,6 @@
 export const formValidate = () => {
 	const quoteForm = document.querySelector('.quote__form'),
+		popupForm = document.querySelector('.popup__form'),
 		regExpName = /^[а-я0-9_-]{2,16}$/,
 		regExpEmail = /^[a-z0-9._%+-]+@[a-z0-9-]+.+.[a-z]{2,4}$/,
 		regExpTel = /^(\+)?[78]([-()]*\d{10,12})/;
@@ -50,18 +51,27 @@ export const formValidate = () => {
 	};
 
 	for (const elem of quoteForm.elements) {
-		if (elem.classList.contains('quote__input')) {
+		if (elem.classList.contains('input')) {
 			elem.addEventListener('blur', () => {
 				validateElem(elem);
 			});
 		}
 	}
 
-	quoteForm.addEventListener('submit', event => {
-		event.preventDefault();
+	for (const elem of popupForm.elements) {
+		if (elem.classList.contains('input')) {
+			elem.addEventListener('blur', () => {
+				validateElem(elem);
+			});
+		}
+	}
 
-		for (const elem of quoteForm.elements) {
-			if (elem.classList.contains('quote__input')) {
+	document.addEventListener('submit', event => {
+		event.preventDefault();
+		const target = event.target;
+
+		for (const elem of target.elements) {
+			if (elem.classList.contains('input')) {
 				if (elem.value === '') {
 					elem.nextElementSibling.textContent = 'Данное поле не заполненно';
 					isValidate = false;
@@ -74,7 +84,8 @@ export const formValidate = () => {
 
 		if (isValidate) {
 			submit();
-			quoteForm.reset();
+			target.reset();
 		}
 	});
+
 };
