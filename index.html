@@ -286,24 +286,19 @@
             <h3 class="quote__heading">Получить консультацию</h3>
             <form action="telegram.php" method="POST" class="quote__form">
               <div class="form-group">
-                <input type="text" autocomplete="off" name="userName" class="input form__input quote__input" id="quote-user-name" placeholder="Имя">
-                <span class="form-validate"></span>
+                <input type="text" autocomplete="off" name="name" class="input form__input quote__input" id="quote-user-name" placeholder="Имя" data-validate-field="name">
               </div>
               <div class="form-group">
-                <input type="email" autocomplete="off" name="userEmail" class="input form__input quote__input" id="quote-user-email" placeholder="Email">
-                <span class="form-validate"></span>
+                <input type="email" autocomplete="off" name="email" class="input form__input quote__input" id="quote-user-email" placeholder="Email" data-validate-field="email">
               </div>
               <div class="form-group">
-                <input type="tel" autocomplete="off" name="userPhone" class="input form__input quote__input" id="quote-user-phone" placeholder="Телефон">
-                <span class="form-validate"></span>
+                <input type="tel" autocomplete="off" name="phone" class="input form__input quote__input" id="quote-user-phone" placeholder="Телефон" data-validate-field="tel">
               </div>
               <div class="form-group">
-                <input type="text" autocomplete="off" name="userSubject" class="input form__input quote__input" id="quote-user-subject" placeholder="Тема">
-                <span class="form-validate"></span>
+                <input type="text" autocomplete="off" name="subject" class="input form__input quote__input" id="quote-user-subject" placeholder="Тема">
               </div>
               <div class="form-group form-group__textarea">
-                <textarea type="textarea" autocomplete="off" rows="5" name="userMessage" class="input textarea form__input quote__input quote__textarea" id="quote-user-message" placeholder="Cообщение"></textarea>
-                <span class="form-validate"></span>
+                <textarea autocomplete="off" rows="5" name="message" class="input textarea form__input quote__input quote__textarea" id="quote-user-message" placeholder="Cообщение"></textarea>
               </div>
               <button class="button form-button">Отправить</button>
             </form>
@@ -407,16 +402,13 @@
         <button class="popup-close"></button>
         <form action="telegram.php" method="POST" class="form popup__form">
           <div class="form-group popup-group">
-            <input type="text" autocomplete="off" name="userName" class="input form__input popup__input" id="popup-user-name" placeholder="Имя">
-            <span class="form-validate"></span>
+            <input type="text" autocomplete="off" name="name" class="input form__input popup__input" id="popup-user-name" placeholder="Имя" data-validate-field="name"> 
           </div>
           <div class="form-group popup-group">
-            <input type="email" autocomplete="off" name="userEmail" class="input form__input popup__input" id="popup-user-email" placeholder="Email">
-            <span class="form-validate"></span>
+            <input type="email" autocomplete="off" name="email" class="input form__input popup__input" id="popup-user-email" placeholder="Email" data-validate-field="email">
           </div>
           <div class="form-group popup-group">
-            <input type="tel" autocomplete="off" name="userPhone" class="input form__input popup__input" id="popup-user-phone" placeholder="Телефон">
-            <span class="form-validate"></span>
+            <input type="tel" autocomplete="off" name="phone" class="input form__input popup__input" id="popup-user-phone" placeholder="Телефон" data-validate-field="tel">
           </div>
           <button class="button form-button">Отправить</button>
         </form>
@@ -426,6 +418,8 @@
     <!-- /.popup-dialog -->
   </div>
   <!-- /.popup-call popup -->
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/index.js" type="module"></script>
 </body>
