@@ -5,6 +5,8 @@ import { mainSlider } from './modules/mainSlider.js';
 import { feedbackSlider } from './modules/feedbackSlider.js';
 import { sendForms } from './modules/sendForms.js';
 
+new WOW().init();
+
 burgerMenu();
 smoothScroll();
 popupCall();

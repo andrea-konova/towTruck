@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -58,9 +59,9 @@
       <!-- /.header__menu -->
       <div class="burger" id="burger"></div>
       <div class="hero">
-        <h1 class="hero__title">Эвакуатор</h1>
-        <p class="hero__subtitle">в Краснодарском крае</p>
-        <button class="button hero__button popup-button">Узнать больше</button>
+        <h1 class="hero__title wow fadeInDown" data-wow-delay="0.1s">Эвакуатор</h1>
+        <p class="hero__subtitle wow fadeInUp" data-wow-delay="0.3s">в Краснодарском крае</p>
+        <button class="button hero__button popup-button wow fadeIn" data-wow-delay="0.5s">Узнать больше</button>
       </div>
       <!-- /.hero -->
     </div>
@@ -127,7 +128,7 @@
     <section class="about" id="about">
       <div class="container">
         <div class="row about__row">
-          <div class="about__wrap">
+          <div class="about__wrap wow fadeInLeft" data-wow-delay="0.2s">
             <img src="img/about/card_img.jpg" alt="Авто после ДТП" class="about__wrap-image">
           </div>
           <div class="about__card">
@@ -233,9 +234,9 @@
     <!-- /.feedback -->
     <section class="news" id="news">
       <div class="container">
-        <h2 class="heading news__heading">Свежие новости</h2>
+        <h2 class="heading news__heading wow fadeInDown" data-wow-delay="0.1s">Свежие новости</h2>
         <div class="row news__row">
-          <div class="news__card">
+          <div class="news__card wow fadeInDown" data-wow-delay="0.3s">
             <div class="news__card-wrap">
               <img src="img/news/news_1.jpg" alt="header_bg" class="news__card-wrap--image">
             </div>
@@ -247,7 +248,7 @@
             <a class="button news__card-button">Читать</a>
           </div>
           <!-- /.news__card -->
-          <div class="news__card">
+          <div class="news__card wow fadeInUp" data-wow-delay="0.5s">
             <div class="news__card-wrap">
               <img src="img/news/news_2.jpg" alt="header_bg" class="news__card-wrap--image">
             </div>
@@ -259,7 +260,7 @@
             <a class="button news__card-button">Читать</a>
           </div>
           <!-- /.news__card -->
-          <div class="news__card">
+          <div class="news__card wow fadeInDown" data-wow-delay="0.7s">
             <div class="news__card-wrap">
               <img src="img/news/news_3.jpg" alt="header_bg" class="news__card-wrap--image">
             </div>
@@ -282,7 +283,7 @@
           <div class="quote__wrap">
             <img src="img/quote/quote_1.jpg" alt="Завка" class="quote__wrap--image">
           </div>
-          <div class="quote__form-wrap">
+          <div class="quote__form-wrap wow fadeIn" data-wow-delay="0.5s">
             <h3 class="quote__heading">Получить консультацию</h3>
             <form action="telegram.php" method="POST" class="quote__form">
               <div class="form-group">
@@ -313,7 +314,7 @@
     <section class="false__footer">
       <div class="container">
         <div class="row footer__row-first footer__row-first--clip">
-          <span class="footer__developer-link footer__developer-lower footer__false">Всегда на связи</span>
+          <span class="footer__developer-link footer__developer-lower footer__false wow fadeInDown" data-wow-delay="0.3s">Всегда на связи</span>
         </div>
         <!-- /.row footer__row-first-clip -->
       </div>
@@ -325,7 +326,7 @@
     <div class="footer" id="contacts">
       <div class="container">
         <div class="row footer__row-main">
-          <div class="footer__contacts">
+          <div class="footer__contacts wow fadeInLeft" data-wow-delay="0.3s">
             <div class="footer__header">
               <h3 class="footer__heading">Контакты</h3>
               <div class="footer__heading-line"></div>
@@ -349,7 +350,7 @@
               <a href="tg://resolve?domain=annakon97" class="link phone__link footer__phone">info@telegram</a>
             </div>
           </div>
-          <div class="footer__navigation">
+          <div class="footer__navigation wow fadeInDown" data-wow-delay="0.5s">
             <div class="footer__header">
               <h3 class="footer__heading ">Навигация</h3>
               <div class="footer__heading-line"></div>
@@ -365,7 +366,7 @@
           <div class="footer__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125695.03159472848!2d38.92875097074107!3d45.067669839431986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdGM0LrQuNC5INC60YDQsNC5LCDQoNC-0YHRltGP!5e0!3m2!1suk!2sua!4v1597922420494!5m2!1suk!2sua" width="100%" height="220" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
-          <div class="footer__hours">
+          <div class="footer__hours wow fadeInRight" data-wow-delay="0.7s">
             <div class="footer__header">
               <h3 class="footer__heading">Рабочее время</h3>
               <div class="footer__heading-line"></div>
@@ -420,6 +421,7 @@
   <!-- /.popup-call popup -->
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/index.js" type="module"></script>
 </body>

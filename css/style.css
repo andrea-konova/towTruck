@@ -885,6 +885,9 @@ a {
     margin: 12px;
     cursor: pointer; }
   .popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     left: 50%;
     top: 20%;
@@ -897,7 +900,7 @@ a {
     align-items: center;
     flex-direction: column;
     padding: 4rem 1rem 2rem 1rem;
-    width: 100%; }
+    width: 80%; }
   .popup__input {
     width: 100%; }
 
@@ -908,7 +911,7 @@ a {
 @media screen and (max-width: 992px) {
   html {
     font-size: 12px; }
-  __img {
+  .logo__img {
     padding-left: 1rem; }
   .nav__item {
     margin-right: 3.2rem; }
@@ -984,7 +987,7 @@ a {
   .popup-content {
     width: 50%; }
   .popup__input {
-    width: 80%; } }
+    width: 100%; } }
 
 @media screen and (max-width: 576px) {
   .burger {
@@ -1073,4 +1076,4 @@ a {
   .popup-content {
     width: 75%; }
   .popup__input {
-    width: 80%; } }
+    width: 100%; } }
