@@ -513,6 +513,7 @@ a {
 
 .services {
   margin-top: -17rem;
+  margin-bottom: 5rem;
   position: relative;
   z-index: 2; }
   .services__row {
@@ -551,7 +552,7 @@ a {
        object-position: center; }
 
 .about {
-  padding-bottom: 3rem;
+  margin-top: -10rem;
   background: url("../img/about/about_bg.jpg") no-repeat left; }
   .about__row {
     display: flex;
@@ -670,6 +671,7 @@ a {
     background: url("../img/feedback/right-arrow.png") no-repeat center; }
 
 .news {
+  margin-top: -10rem;
   margin-bottom: 3rem; }
   .news__row {
     align-items: flex-start;
@@ -740,6 +742,7 @@ a {
         border: none; }
 
 .quote {
+  margin-top: 5rem;
   margin-bottom: 4rem;
   position: relative; }
   .quote__row {
