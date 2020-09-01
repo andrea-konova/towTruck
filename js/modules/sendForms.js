@@ -41,7 +41,7 @@ export const sendForms = () => {
 			},
 			messages: {
 				name: {
-					required: 'Заполните поле',
+					required: 'Заполните поле имя',
 					minLength: 'Имя не короче 2 символов',
 					maxLength: 'Имя не длиннее 15 символов'
 				},
@@ -49,7 +49,7 @@ export const sendForms = () => {
 					email: 'Введите корректный Email'
 				},
 				tel: {
-					required: 'Заполните поле'
+					required: 'Заполните поле телефон'
 				}
 			},
 

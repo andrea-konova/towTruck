@@ -1,3 +1,4 @@
+import { preloader } from './modules/preloader.js';
 import { burgerMenu } from './modules/burgerMenu.js';
 import { smoothScroll } from './modules/smoothScroll.js';
 import { popupCall } from './modules/popupCall.js';
@@ -7,6 +8,7 @@ import { sendForms } from './modules/sendForms.js';
 
 new WOW().init();
 
+preloader();
 burgerMenu();
 smoothScroll();
 popupCall();

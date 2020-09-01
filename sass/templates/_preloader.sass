@@ -1,0 +1,24 @@
+.preloader 
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  overflow: hidden
+  background: url('../img/road_1.jpg') center no-repeat 
+  background-size: cover
+  z-index: 1001
+  &__image 
+    position: relative
+    top: 50%
+    left: 50%
+    width: 256px
+    height: 32px
+    margin-top: -16px
+    margin-left: -128px
+    background: url('../img/preloader.gif') no-repeat 50% 50% 
+.loaded_hiding .preloader 
+  transition: 0.3s opacity
+  opacity: 0
+.loaded .preloader 
+  display: none

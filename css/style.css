@@ -368,6 +368,33 @@ a {
   -webkit-clip-path: polygon(0 95%, 0 0%, 100% 0, 100% 95%, 50% 100%);
           clip-path: polygon(0 95%, 0 0%, 100% 0, 100% 95%, 50% 100%); }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: url("../img/road_1.jpg") center no-repeat;
+  background-size: cover;
+  z-index: 1001; }
+  .preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 256px;
+    height: 32px;
+    margin-top: -16px;
+    margin-left: -128px;
+    background: url("../img/preloader.gif") no-repeat 50% 50%; }
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0; }
+
+.loaded .preloader {
+  display: none; }
+
 .section-hero {
   padding-bottom: 30rem; }
   .section-hero__swiper-container {
@@ -752,7 +779,7 @@ a {
 
 .form-group {
   position: relative;
-  padding-bottom: 2rem;
+  padding-bottom: 2.2rem;
   width: 48%;
   max-width: 22rem; }
   .form-group__textarea {
@@ -815,6 +842,9 @@ a {
     width: 15%;
     max-width: 7rem; }
   .footer__map {
+    display: flex;
+    align-items: start;
+    justify-content: center;
     width: 36%;
     max-width: 22rem; }
   .footer__place {
@@ -911,6 +941,16 @@ a {
 @media screen and (max-width: 992px) {
   html {
     font-size: 12px; }
+  .button:hover {
+    cursor: default;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #fc5a0a;
+    border: 0.15rem solid #fc5a0a; }
+  .nav__item:hover {
+    color: #111111; }
+    .nav__item:hover::after {
+      width: 0%; }
   .logo__img {
     padding-left: 1rem; }
   .nav__item {
@@ -921,7 +961,9 @@ a {
     justify-content: space-around; }
   .news__card {
     width: 45%;
-    max-width: 25rem; } }
+    max-width: 25rem; }
+  .footer__nav-item:hover {
+    color: #ffffff; } }
 
 @media screen and (max-width: 760px) {
   .header__menu {
@@ -1042,7 +1084,7 @@ a {
     flex-direction: column;
     align-items: center;
     margin-right: 0;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
     font-size: 1.3rem; }
   .header-hide {
     display: none; }
@@ -1076,4 +1118,7 @@ a {
   .popup-content {
     width: 75%; }
   .popup__input {
-    width: 100%; } }
+    width: 100%; }
+  .js-validate-error-label {
+    bottom: 0;
+    left: 3px; } }

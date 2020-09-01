@@ -4,6 +4,19 @@
 @media screen and ( max-width: 992px )
   html
     font-size: 12px
+  .button
+    &:hover
+      cursor: default
+      font-weight: normal
+      color: $light
+      background-color: $mainColor
+      border: 0.15rem solid $mainColor
+  .nav
+    &__item
+      &:hover
+        color: $black
+        &::after
+          width: 0%
   .logo
     &__img
       padding-left: 1rem
@@ -18,6 +31,11 @@
     &__card
       width: 45%
       max-width: 25rem
+  .footer
+    &__nav
+      &-item
+        &:hover
+          color: $light
 @media screen and ( max-width: 760px )
   .header__menu
     flex-direction: column
@@ -149,7 +167,7 @@
       flex-direction: column
       align-items: center
       margin-right: 0
-      padding-bottom: 0.5rem
+      padding-bottom: 0.8rem
       font-size: 1.3rem
   .header
     &-hide
@@ -191,3 +209,6 @@
       width: 75%
     &__input
       width: 100%
+  .js-validate-error-label 
+    bottom: 0
+    left: 3px
