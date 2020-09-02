@@ -507,12 +507,14 @@ a {
     font-size: 3.3rem;
     text-transform: capitalize; }
   .hero__button {
-    margin-top: 3.75rem; }
+    margin: 3.75rem 0; }
     .hero__button:hover {
       color: #ffffff; }
+  .hero__phone {
+    font-size: 3rem; }
 
 .services {
-  margin-top: -17rem;
+  margin-top: -23rem;
   position: relative;
   z-index: 2; }
   .services__row {
@@ -962,6 +964,12 @@ a {
   .news__card {
     width: 45%;
     max-width: 25rem; }
+    .news__card-button:hover {
+      font-weight: bold;
+      cursor: default;
+      color: #fc5a0a;
+      background-color: transparent;
+      border: none; }
   .footer__nav-item:hover {
     color: #ffffff; } }
 
