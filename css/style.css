@@ -920,6 +920,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     position: fixed;
     left: 50%;
     top: 20%;
@@ -927,14 +928,35 @@ a {
     max-width: 25rem;
     transform: translateX(-50%);
     background-color: #ffffff; }
+  .popup-heading {
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center; }
+    .popup-heading--second {
+      padding-top: 0; }
   .popup__form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 4rem 1rem 2rem 1rem;
+    padding: 2rem 1rem;
     width: 80%; }
   .popup__input {
     width: 100%; }
+  .popup-table {
+    padding: 1rem;
+    width: 100%;
+    border-spacing: 4px; }
+    .popup-table__th, .popup-table__tr, .popup-table__td {
+      font-size: 1rem; }
+    .popup-table__td {
+      padding: 0.5rem 0;
+      text-align: center; }
+  .popup-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0; }
 
 @media screen and (max-width: 1200px) {
   html {

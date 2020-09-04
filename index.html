@@ -64,7 +64,7 @@
       <div class="hero">
         <h1 class="hero__title wow fadeInDown" data-wow-delay="0.1s">Эвакуатор</h1>
         <p class="hero__subtitle wow fadeInUp" data-wow-delay="0.3s">в Краснодарском крае</p>
-        <button class="button hero__button popup-button wow fadeIn" data-wow-delay="0.5s">Узнать больше</button>
+        <button class="button hero__button popup-button popup-price-button wow fadeIn" data-wow-delay="0.5s">Узнать цены</button>
         <a href="tel:+79054078632" class="link phone__link hero__phone wow fadeInUp">+7 905 407-86-32</a>
       </div>
       <!-- /.hero -->
@@ -85,7 +85,7 @@
             <!-- /.services__card-image -->
             <h3 class="services__card-title">Поломки автомобиля</h3>
             <p class="services__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил знаках единственное вопроса ручеек за.</p>
-            <button class="button services__card-button popup-button">Вызвать эвакуатор</button>
+            <button class="button services__card-button popup-button popup-call-button">Вызвать эвакуатор</button>
           </div>
           <!-- /.services__card -->
           <div class="services__card">
@@ -97,7 +97,7 @@
             <!-- /.services__card-image -->
             <h3 class="services__card-title">Дорожная авария</h3>
             <p class="services__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил знаках единственное вопроса ручеек за.</p>
-            <button class="button services__card-button popup-button">Вызвать эвакуатор</button>
+            <button class="button services__card-button popup-button popup-call-button">Вызвать эвакуатор</button>
           </div>
           <!-- /.services__card -->
           <div class="services__card">
@@ -109,7 +109,7 @@
             <!-- /.services__card-image -->
             <h3 class="services__card-title">Cпущенная шина</h3>
             <p class="services__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил знаках единственное вопроса ручеек за.</p>
-            <button class="button services__card-button popup-button">Вызвать эвакуатор</button>
+            <button class="button services__card-button popup-button popup-call-button">Вызвать эвакуатор</button>
           </div>
           <!-- /.services__card -->
           <div class="services__card">
@@ -121,7 +121,7 @@
             <!-- /.services__card-image -->
             <h3 class="services__card-title">Буксировка мотоцикла</h3>
             <p class="services__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Продолжил знаках единственное вопроса ручеек за.</p>
-            <button class="button services__card-button popup-button">Вызвать эвакуатор</button>
+            <button class="button services__card-button popup-button popup-call-button">Вызвать эвакуатор</button>
           </div>
           <!-- /.services__card -->
         </div>
@@ -139,7 +139,7 @@
             <h2 class="services__card-title about__card-title">Безопасная доставка</h2>
             <p class="about__card-subtitle">Вашему автомобилю гарантированна!</p>
             <p class="services__card-info about__card-info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварный все заманивший приставка буквоград вдали которое домах путь, но пустился которой то моей его, повстречался за! Предупредила лучше если от всех выйти рот, толку всемогущая lorem. Но, обеспечивает себя родного безорфографичный несколько большого если что?</p>
-            <button class="button about__card-button popup-button">Узнать больше</button>
+            <button class="button about__card-button popup-button popup-price-button">Узнать цены</button>
           </div>
         </div>
       </div>
@@ -405,6 +405,7 @@
     <div class="popup-dialog">
       <div class="popup-content">
         <button class="popup-close"></button>
+        <h3 class="popup-heading">Заказать эвакуатор</h3>
         <form action="telegram.php" method="POST" class="form popup__form">
           <div class="form-group popup-group">
             <input type="text" autocomplete="off" name="name" class="input form__input popup__input" id="popup-user-name" placeholder="Имя" data-validate-field="name"> 
@@ -423,6 +424,56 @@
     <!-- /.popup-dialog -->
   </div>
   <!-- /.popup-call popup -->
+  <div class="popup-price popup">
+    <div class="popup-dialog">
+      <div class="popup-content">
+        <button class="popup-close"></button>
+        <h3 class="popup-heading">Цены на услуги эвакуатора</h3>
+        <table class="popup-table">
+          <tr class="popup-table__tr">
+            <th class="popup-table__th"></th>
+            <th class="popup-table__th">По городу</th>
+            <th class="popup-table__th">За городом*</th>
+          </tr>
+          <tr class="popup-table__tr">
+            <td class="popup-table__td">Мотоцикл</td>
+            <td class="popup-table__td">от 1000 руб</td>
+            <td class="popup-table__td">от 35 руб</td>
+          </tr>
+          <tr class="popup-table__tr">
+            <td class="popup-table__td">Легковой <br>автомобиль</td>
+            <td class="popup-table__td">от 1000 руб</td>
+            <td class="popup-table__td">от 35 руб</td>
+          </tr>
+          <tr class="popup-table__tr">
+            <td class="popup-table__td">Внедорожник <br>минивен</td>
+            <td class="popup-table__td">от 1500 руб</td>
+            <td class="popup-table__td">от 40 руб</td>
+          </tr>
+        </table>
+        <h3 class="popup-heading popup-heading--second">Дополнительные услуги</h3>
+        <table class="popup-table">
+          <tr class="popup-table__tr">
+          <tr class="popup-table__tr"></td>
+            <td class="popup-table__td">Эвакуатор из кювета</td>
+            <td class="popup-table__td">от 1200 руб</td>
+          </tr>
+          <tr class="popup-table__tr"></td>
+            <td class="popup-table__td">Погрузка авто с <br>заблокированными колесами</td>
+            <td class="popup-table__td">100 руб**</td>
+          </tr>
+        </table>
+        <button class="button popup-button popup-price-call-button">Вызвать эвакуатор</button>
+        <div class="popup-label">
+          <span class="popup-span">* цена указана за 1 км</span>
+          <span class="popup-span">** цена указана за 1 колесо</span>
+        </div>
+      </div>
+      <!-- /.popup-content -->
+    </div>
+    <!-- /.popup-dialog -->
+  </div>
+  <!-- /.popup-price popup -->
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.min.js"></script>
   <script src="js/wow.min.js"></script>
