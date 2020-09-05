@@ -531,12 +531,14 @@ a {
     max-width: 16.25rem;
     padding-bottom: 3rem; }
     .services__card-title {
-      margin: 1.5rem 0;
+      margin: 1.5rem 0 1rem 0;
       font-size: 1.125rem;
       font-weight: bold;
+      text-align: center;
       text-transform: uppercase; }
     .services__card-info {
-      margin: 0 0 2rem 0;
+      margin: 0;
+      min-height: 3.5rem;
       font-size: 1rem;
       text-align: center;
       color: #4a4f53; }
@@ -981,6 +983,11 @@ a {
     margin-right: 3.2rem; }
     .nav__item:last-child {
       margin-right: 2rem; }
+  .services__card-title {
+    margin: 1.5rem 0 0 0;
+    min-height: 3rem; }
+  .services__card-button {
+    padding: 1rem 2rem; }
   .news__row {
     justify-content: space-around; }
   .news__card {
@@ -1010,6 +1017,10 @@ a {
   .services__card {
     width: 45%;
     max-width: 19rem; }
+    .services__card-title {
+      min-height: 2rem; }
+    .services__card-info {
+      min-height: 2.2rem; }
   .clip-wrap__services {
     height: 16rem; }
   .about {
